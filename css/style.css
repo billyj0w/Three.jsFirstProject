@@ -50,8 +50,8 @@ header a{
     justify-content: flex-end;
 }
 .left h1{
+    margin-top: 15%;
     font-size: 5em;
-    
 }
 .right{
     width: 100%;
@@ -60,6 +60,7 @@ header a{
     align-items: center;
 }
 .right h1{
+    margin-top: 15%;
     font-size: 5em;
 }
 .exploreButton{
@@ -120,6 +121,7 @@ footer{
     .main{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     footer{
         text-align: center;
@@ -128,6 +130,13 @@ footer{
     .exploreButton{
         margin-bottom: 5%;
     }
+    .right{
+        justify-content: center;
+    }
+    .left{
+        justify-content: center;
+    }
+    
     .footerLinks{padding: 0;}
     .footerButton{padding: 0;}
 

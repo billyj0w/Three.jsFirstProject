@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>AWWWARDS CLONE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/stretch-pro');
+        @import url('http://fonts.cdnfonts.com/css/hk-groteks');
+        </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo">
+        <a href="#">Let's Talk</a>
+    </header>
+    <div class="main" id="main">
+        <div class="left">
+            <h1>TTHE MAGIC</h1>
+        </div>
+        <div class="right">
+            <h1>CUBEE</h1>
+        </div>
+    </div>
+    <div class="exploreButton">
+        <a href="https://github.com/billyj0w" target="_blank">EXPLORE MORE PROJECTS</a>
+    </div>
+    <footer>
+        <div class="footerLinks">
+            <a href="https://www.linkedin.com/in/jose-rafael-/" target="_blank">Linkedin</a>
+            <a href="https://github.com/billyj0w" target="_blank">Github</a>
+        </div>
+        <div class="footerButton">
+            <h4>2022 JOSE RAFAEL / <span> CLONE UI</span></h4>
+        </div>
+        <script src="js/three.js"></script>
+		<script>
+            
+			const scene = new THREE.Scene();
+            scene.background = null;
+			const camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.4, 500 );
+
+			const renderer = new THREE.WebGLRenderer({ alpha: true });
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.getElementById("main").appendChild( renderer.domElement );
+
+			const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+			const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+			const cube = new THREE.Mesh( geometry, material );
+			scene.add( cube );
+
+			camera.position.z = 4;
+
+			function animate() {
+				requestAnimationFrame( animate );
+
+				cube.rotation.x += 0.01;
+				cube.rotation.y += 0.01;
+
+				renderer.render( scene, camera );
+			};
+
+			animate();
+		</script>
+    </footer>
+</body>
+</html>

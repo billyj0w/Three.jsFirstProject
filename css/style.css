@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Stretch Pro', sans-serif;
+    overflow-x: hidden;
+    background: rgb(0, 26, 32);
+}
+canvas{
+    display: flex !important;
+    width: 100% !important;
+    height: auto !important;
+    position: absolute !important;
+    z-index: -1;
+    flex-direction: column !important;
+    align-content: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+header{
+    width: 100%;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    font-family: 'HK Grotesk', sans-serif;
+    align-items: center;
+}
+header img{
+    padding-left: 5%;
+    width: 170px;
+}
+header a{
+    padding-right: 5%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline 2px rgb(14, 133, 101);
+}
+.main{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+.left{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.left h1{
+    font-size: 5em;
+    
+}
+.right{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.right h1{
+    font-size: 5em;
+}
+.exploreButton{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'HK Grotesk', sans-serif;
+}
+.exploreButton a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 30px;
+    border: 3px solid rgb(14, 133, 101);
+    cursor: pointer;
+    transition: 0.2s all;
+}
+.exploreButton a:hover{
+    color: #000;
+    background: white;
+    border: 3px solid #31ff28;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'HK Grotesk', sans-serif;
+    align-items: center;
+}
+.footerLinks{
+    padding-left: 5%;
+}
+.footerLinks a{
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline 2px rgb(14, 133, 101);
+}
+.footerButton{
+    padding-right: 5%;
+}
+.footerButton h4{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 50px;
+}
+.footerButton span{
+    color: rgb(14, 133, 101);
+}
+
+@media only screen and (max-width: 930px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        text-align: center;
+        flex-direction: column;
+    }
+    .exploreButton{
+        margin-bottom: 5%;
+    }
+    .footerLinks{padding: 0;}
+    .footerButton{padding: 0;}
+
+}
+@media only screen and (max-width: 930px) {
+    .left h1{
+        font-size: 4em;       
+    }
+    .right h1{
+        font-size: 4em;       
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    canvas{
+        display: flex !important;
+        width: 100% !important;
+        height: auto !important;
+        position: absolute !important;
+        z-index: -1;
+        background-color: rgb(0, 26, 32) !important;
+        flex-direction: column !important;
+        align-content: center !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .left h1{
+        font-size: 3em;       
+    }
+    .right h1{
+        font-size: 3em;       
+    }
+}

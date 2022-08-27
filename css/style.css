@@ -11,7 +11,7 @@ body{
 }
 canvas{
     display: flex !important;
-    width: 100% !important;
+    width: 80% !important;
     height: auto !important;
     position: absolute !important;
     z-index: -1;
